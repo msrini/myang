@@ -1,0 +1,42 @@
+<div ng-repeat="(client, details) in cc.clientDetails">
+    <!--------------------------->
+    <div class="well row">
+        <div class="media">
+
+            <a class="pull-left" href="#">
+                <img ng-src="{{details.info.logo}}" width="50px"/>
+            </a>
+            <div class="media-body">
+                <p class="media-heading">{{client}}
+                <span class="text-right">({{details.info.url}})</span></p>
+                <div class="row">
+                    <div class="col-md-10">
+                        <span ng-if="!details.$edit" ng-dblclick="details.$edit = true; details.$oldnotes=details.notes">{{details.notes}}</span>
+                        <span ng-if="details.$edit">
+                            <textarea type="text" class="col-md-10" ng-model="details.notes" />
+                            <a ng-if="details.$edit" href="" class="btn btn-primary btn-xs" ng-click="cc.saveNotes(client,details)">Save</a>
+                            <a ng-if="details.$edit" href="" class="btn btn-primary btn-xs" ng-click="details.$edit = false; details.notes=details.$oldnotes">Cancel</a>
+                        </span>
+                    </div>
+                    <div class="col-md-2">
+                        <img ng-src="{{details.sales.gravatar}}" width="40px"/>
+                        Sales: {{details.sales.name}} ({{details.sales.email}})
+                    </div>
+                </div>
+
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> {{cc.whenCreated(details.dates.create)}} </span></li>
+                    <li>|</li>
+                    <span ng-show="cc.isPositive(details.opps.length)" ng-click="cc.showOpp(client)"><i class="glyphicon glyphicon-check"></i> {{details.opps.length}} opportunities</span>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span><i class="fa fa-facebook-square"></i></span>
+                        <span><i class="fa fa-twitter-square"></i></span>
+                        <span><i class="fa fa-google-plus-square"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

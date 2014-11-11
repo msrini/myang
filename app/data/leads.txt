@@ -1,0 +1,21 @@
+{
+    "iOSApp" : {
+        "description" : "",
+        "notes":["Front end App Development on iOS8"],
+        "estValue"  : "1000",
+        "estCloseDate": "Jan/15",
+        "businessNeeds" : "",
+        "technicalNeeds" :  "",
+        "status" : "closed-won"
+    },
+    "NodeJS" : {
+        "description" : "",
+        "notes":["Back end App Development on Node"],
+        "estValue"  : "1000",
+        "estCloseDate": "Jan/15",
+        "businessNeeds" : "",
+        "technicalNeeds" :  "",
+        "status" : "closed-won",
+        "attach" : {"sow" : "sow_url"}
+    }
+}
