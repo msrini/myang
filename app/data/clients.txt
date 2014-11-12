@@ -1,23 +1,23 @@
 {
-    "Clamour" : {
+    "CL1" : {
         "opps": ["iOSApp","DesktopApp"],
         "dates":{"create":"07-Nov-2014 21:00"},
-        "notes": "Clamour works with Facebook to create a marketplace with people in your community. With Clamour, you can easily search, buy, and sell items with your friends and neighbors.",
-        "info": {"url": "www.clamour.net", "logo": "images/clamour.ico"},
+        "notes": "CL1 works with Facebook to create a marketplace with people in your community. With CL1, you can easily search, buy, and sell items with your friends and neighbors.",
+        "info": {"url": "www.CL1.net", "logo": "images/cl1.ico"},
         "sales": {"name":"Amar","gravatar":"images/gravatar.jpg", "email":"test@test.com"},
         "deliveryOwner": "xxx"
     },
-    "SuperGroup": {
+    "SG": {
         "opps": [],
-        "notes": "SuperGroup is a distinctive branded UK fashion retailer offering quality clothing and accessories. It operates a multi-channel business through a combination of Superdry standalone stores, Superdry concessions, e-Commerce and its UK and International Wholesale operations",
+        "notes": "This is a distinctive branded UK fashion retailer offering quality clothing and accessories. It operates a multi-channel business through a combination of Superdry standalone stores, Superdry concessions, e-Commerce and its UK and International Wholesale operations",
         "info": {"url": "http://www.supergroup.co.uk/", "logo": "images/superGrp.png"},
         "sales": {"name":"BSB","gravatar":"images/gravatar.jpg", "email":"john@test.com"},
         "deliveryOwner": "xyzxyz"
     },
-    "Liberty": {
+    "LT": {
         "opps": ["iOSApp","DesktopApp"],
         "notes": "Trust Knowledge Value",
-        "info": {"url": "http://www.libertytravel.com/", "logo": "images/liberty.jpg"},
+        "info": {"url": "http://www.lt.com/", "logo": "images/lt.jpg"},
         "sales": {"name":"Jas","gravatar":"images/gravatar.jpg", "email":"jas@test.com"},
         "deliveryOwner": "xyzxyz"
     }
